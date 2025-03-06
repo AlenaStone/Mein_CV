@@ -4,7 +4,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 500px;
+    padding: 2% 25%;
     position: relative;
 }
 
@@ -43,8 +43,8 @@ header {
     position: absolute;
     font-size: 16px;
     font-weight: bold;
-    top: 20px;
-    right: 25px;
+    top: 2%;
+    right: 2%;
     color: #f5f1f1;
     font-family: 'Calibri', sans-serif;
 
