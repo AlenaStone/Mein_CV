@@ -232,7 +232,7 @@ header {
         background-size: cover;
         background-position: center;
         min-height: 220px;
-        padding: 5% 10%;
+        padding: 5% 20%;
     }
 
     .header-content {
@@ -263,7 +263,7 @@ header {
         background-size: contain; /* Чтобы фон не обрезался */
         background-repeat: no-repeat;
         min-height: 180px;
-        padding: 8% 5%;
+        padding: 8% 15%;
     }
 
     .header-content {
