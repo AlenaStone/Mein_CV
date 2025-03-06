@@ -11,7 +11,7 @@ header {
     background-repeat: no-repeat;
     color: black;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 2% 20%;  /* Уменьшаем паддинги */
     position: relative;
@@ -23,10 +23,10 @@ header {
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     font-family: 'Calibri', sans-serif;
     gap: 20px;
-    flex-wrap: wrap;
+    width: 100%;
     /* Отступ между фото и текстом */
 
 }
@@ -132,29 +132,29 @@ header {
     header {
         flex-direction: column;
         height: auto;
-        padding: 2% 50%;
-        
+        padding: 5% 10%;
         background-size: contain;
         min-height: 220px;
     }
 
     .header-content {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        gap: 15px;
+        gap: 10px;
+        justify-content: space-between;
     }
 
     .photo-info-container {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        text-align: left;
         gap: 10px;
     }
 
     .photo-container {
         
         width: 100%;  /* Фото немного больше */
-        height: 300px;  /* Более высокое фото */
-        padding-top: 20%;
+        max-width: 500px;
+        min-width: 150px;
     }
 
     .header-text {
@@ -170,10 +170,9 @@ header {
     header {
         flex-direction: column;
         height: auto; /* Авто-высота для мобильных */
-        padding: 20px;
+        padding: 5% 10%;
         text-align: center;
         background-size: contain;
-        padding: 20px;
         min-height: 200px;
     }
 
@@ -204,9 +203,10 @@ header {
     }
 
     .photo-container {
-        width: 150px;  /* Размер фото на мобильных */
+        width: 100%;  /* Размер фото на мобильных */
         height: auto;
-        min-width: 100px;
+        max-width: 500px;
+        min-width: 120px;
     }
 
     .photo-container img {
@@ -232,7 +232,7 @@ header {
         background-size: cover;
         background-position: center;
         min-height: 220px;
-        padding: 20px;
+        padding: 5% 10%;
     }
 
     .header-content {
@@ -263,6 +263,7 @@ header {
         background-size: contain; /* Чтобы фон не обрезался */
         background-repeat: no-repeat;
         min-height: 180px;
+        padding: 5% 10%;
     }
 
     .header-content {
