@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Calibri', sans-serif;
+}
+
 header {
     background-color: rgb(174, 163, 148);
     background-size: cover;
@@ -13,7 +17,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2% 20%;  /* Уменьшаем паддинги */
+    padding: 3% 25%;  /* Уменьшаем паддинги */
     position: relative;
     width: 100%;
     min-height: 250px;
@@ -24,9 +28,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Calibri', sans-serif;
     gap: 20px;
     width: 100%;
+    max-width: 1400px;
     /* Отступ между фото и текстом */
 
 }
@@ -37,7 +41,7 @@ header {
     justify-content: center;
     font-size: 40px;
     font-weight: bold;
-    margin-left: 20px;
+    
 }
 
 .header-text h1 {
@@ -59,10 +63,6 @@ header {
     top: 2%;
     right: 2%;
     color: #f5f1f1;
-    font-family: 'Calibri', sans-serif;
-
-
-
 }
 
 .translation-note a {
@@ -80,18 +80,20 @@ header {
     display: flex;
     align-items: center;
     text-align: left;
-    gap: 15px;
+    gap: 30px;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .photo-container {
-    width: 100%;
+    flex: 0 1 100%;
+    
     max-width: 500px;
+    min-width: 150px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 150px;
    
 }
 
@@ -106,7 +108,7 @@ header {
 .info {
     font-size: 22px;
     line-height: 1.5;
-    font-family: 'Calibri', sans-serif;
+    flex: 1;
 }
 
 .info p {
@@ -131,30 +133,27 @@ header {
     /* Для ноутбуков и планшетов */
     header {
         flex-direction: column;
-        height: auto;
-        padding: 5% 10%;
-        background-size: contain;
+        padding: 4% 10%;
+        text-align: flex-start;
         min-height: 220px;
     }
 
     .header-content {
         flex-direction: row;
         align-items: center;
-        gap: 10px;
         justify-content: space-between;
     }
 
     .photo-info-container {
         flex-direction: row;
-        text-align: left;
-        gap: 10px;
+        justify-content: center;
+        gap: 20px;
     }
 
     .photo-container {
         
-        width: 100%;  /* Фото немного больше */
+        flex: 0 1 100%;
         max-width: 500px;
-        min-width: 150px;
     }
 
     .header-text {
@@ -169,30 +168,29 @@ header {
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
-        height: auto; /* Авто-высота для мобильных */
-        padding: 5% 10%;
+        padding: 6% 5%;
         text-align: center;
-        background-size: contain;
         min-height: 200px;
     }
 
     .header-content {
         flex-direction: column;
         align-items: center;
-        gap: 15px; /* Добавляем отступы между элементами */
+        text-align: center;
+        gap: 15px;
     }
 
     .photo-info-container {
         flex-direction: column;
         text-align: center;
-        
-        gap: 10px;
+        gap: 15px;
     }
-
+    .photo-container {
+        width: 105%;
+        max-width: 250px;
+    }
     .info {
-        font-size: 16px;
-        line-height: 1.5;
-        text-align: center;
+        font-size: 18px;
     }
 
     .info p {
@@ -202,16 +200,16 @@ header {
         gap: 10px;
     }
 
-    .photo-container {
-        width: 100%;  /* Размер фото на мобильных */
-        height: auto;
-        max-width: 500px;
-        min-width: 120px;
+    .header-text {
+        font-size: 28px;
+    }
+        
     }
 
     .photo-container img {
         width: 100%;
         height: auto;
+       
     }
 
     .header-text {
@@ -221,7 +219,7 @@ header {
 
     .header-text h3 {
         font-size: 18px;
-        padding: 5px 0;
+        
     }
     .data {
         font-size: 32px;  /* Больше шрифт для мобильных */
@@ -229,6 +227,8 @@ header {
 }
 @media screen and (max-width: 820px) {
     header {
+        height: auto;
+        flex-direction: column;
         background-size: cover;
         background-position: center;
         min-height: 220px;
@@ -263,24 +263,25 @@ header {
         background-size: contain; /* Чтобы фон не обрезался */
         background-repeat: no-repeat;
         min-height: 180px;
-        padding: 5% 10%;
+        padding: 8% 5%;
     }
 
     .header-content {
         flex-direction: column;
         align-items: center;
+        text-align: center;
         gap: 10px;
     }
 
     .photo-container {
-        width: 80px;
-        height: auto;
+        width: 100%;
+        max-width: 120px;
     }
 
     .info {
-        font-size: 14px;
+        font-size: 16px;
     }
     .header-text {
-        font-size: 25px;
+        font-size: 22px;
     }
 }
