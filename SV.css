@@ -25,7 +25,7 @@ header {
     align-items: center;
     justify-content: flex-start;
     font-family: 'Calibri', sans-serif;
-    gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
     /* Отступ между фото и текстом */
 
@@ -81,19 +81,22 @@ header {
     align-items: center;
     text-align: left;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .photo-container {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    min-width: 150px;
+   
 }
 
 .photo-container img {
-    width: 70%;
+    width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
@@ -124,6 +127,42 @@ header {
     font-size: 40px;
 }
 
+@media screen and (max-width: 1024px) {
+    /* Для ноутбуков и планшетов */
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        background-size: contain;
+        min-height: 220px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .photo-info-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .photo-container {
+        width: 250px;  /* Фото немного больше */
+        height: 300px;  /* Более высокое фото */
+    }
+
+    .header-text {
+        font-size: 30px;
+    }
+
+    .header-text h3 {
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
@@ -149,16 +188,22 @@ header {
     }
 
     .info {
+        font-size: 16px;
+        line-height: 1.5;
         text-align: center;
     }
 
     .info p {
-        justify-content: center; /* Выравниваем иконки и текст */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
     }
 
     .photo-container {
-        width: 120px;
-        height: 160px;
+        width: 150px;  /* Размер фото на мобильных */
+        height: auto;
+        min-width: 100px;
     }
 
     .photo-container img {
@@ -168,10 +213,15 @@ header {
 
     .header-text {
         font-size: 30px;
+        padding: 10px 0; 
     }
 
     .header-text h3 {
         font-size: 18px;
+        padding: 5px 0;
+    }
+    .data {
+        font-size: 32px;  /* Больше шрифт для мобильных */
     }
 }
 @media screen and (max-width: 820px) {
@@ -220,10 +270,13 @@ header {
 
     .photo-container {
         width: 80px;
-        height: 100px;
+        height: auto;
     }
 
     .info {
         font-size: 14px;
+    }
+    .header-text {
+        font-size: 25px;
     }
 }
