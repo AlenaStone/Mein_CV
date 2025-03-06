@@ -132,7 +132,7 @@ header {
     header {
         flex-direction: column;
         height: auto;
-        padding: 20px;
+        padding: 20px 40%;
         background-size: contain;
         min-height: 220px;
     }
