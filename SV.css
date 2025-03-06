@@ -1,8 +1,65 @@
+header {
+    background-color: rgb(174, 163, 148);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 500px;
+    position: relative;
+}
+
 .header-content {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 20px; /* Отступ между фото и текстом */
+    font-family: 'Calibri', sans-serif;
+    gap: 20px;
+    /* Отступ между фото и текстом */
+
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.header-text h1 {
+    margin: 0;
+
+
+}
+
+.header-text h3 {
+    font-size: 42px;
+    font-weight: normal;
+    margin: 5px 0 0 0;
+}
+
+.translation-note {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    top: 20px;
+    right: 25px;
+    color: #f5f1f1;
+    font-family: 'Calibri', sans-serif;
+
+
+
+}
+
+.translation-note a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+.translation-note a:hover {
+    color: #666;
 }
 
 /* Фото слева */
@@ -14,8 +71,7 @@
 }
 
 .photo-container {
-    width: 150px;
-    height: 200px;
+    width: 500px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -23,7 +79,7 @@
 }
 
 .photo-container img {
-    width: 100%;
+    width: 70%;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
@@ -31,6 +87,25 @@
 
 /* Текст справа */
 .info {
-    font-size: 16px;
+    font-size: 22px;
     line-height: 1.5;
+    font-family: 'Calibri', sans-serif;
+}
+
+.info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.info img {
+    width: 20px;
+    height: 20px;
+
+}
+
+.data {
+    font-weight: bold;
+    font-size: 40px;
 }
