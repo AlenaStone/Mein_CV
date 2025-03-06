@@ -132,7 +132,8 @@ header {
     header {
         flex-direction: column;
         height: auto;
-        padding: 20px 40%;
+        padding: 2% 50%;
+        
         background-size: contain;
         min-height: 220px;
     }
@@ -150,8 +151,10 @@ header {
     }
 
     .photo-container {
-        width: 250px;  /* Фото немного больше */
+        
+        width: 100%;  /* Фото немного больше */
         height: 300px;  /* Более высокое фото */
+        padding-top: 20%;
     }
 
     .header-text {
