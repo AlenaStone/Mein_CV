@@ -263,7 +263,7 @@ header {
         background-size: contain; /* Чтобы фон не обрезался */
         background-repeat: no-repeat;
         min-height: 180px;
-        padding: 8% 15%;
+        padding: 8% 5%;
     }
 
     .header-content {
@@ -272,7 +272,11 @@ header {
         text-align: center;
         gap: 10px;
     }
-
+    .photo-info-container {
+        flex-direction: column-reverse; /* Перемещаем фото вниз */
+        align-items: center;
+        gap: 15px;
+    }
     .photo-container {
         width: 100%;
         max-width: 120px;
