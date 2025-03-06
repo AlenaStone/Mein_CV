@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 header {
     background-color: rgb(174, 163, 148);
     background-size: cover;
@@ -7,10 +13,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 25%;
+    padding: 2% 20%;  /* Уменьшаем паддинги */
     position: relative;
     width: 100%;
     min-height: 250px;
+    overflow: hidden;  /* Ограничиваем выход за пределы */
 }
 
 .header-content {
@@ -18,7 +25,8 @@ header {
     align-items: center;
     justify-content: flex-start;
     font-family: 'Calibri', sans-serif;
-    gap: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
     /* Отступ между фото и текстом */
 
 }
@@ -81,6 +89,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .photo-container img {
