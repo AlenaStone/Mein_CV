@@ -1,11 +1,16 @@
 header {
     background-color: rgb(174, 163, 148);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2% 25%;
     position: relative;
+    width: 100%;
+    min-height: 250px;
 }
 
 .header-content {
@@ -108,4 +113,55 @@ header {
 .data {
     font-weight: bold;
     font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto; /* Авто-высота для мобильных */
+        padding: 20px;
+        text-align: center;
+        background-size: contain;
+        padding: 20px;
+        min-height: 200px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* Добавляем отступы между элементами */
+    }
+
+    .photo-info-container {
+        flex-direction: column;
+        text-align: center;
+        
+        gap: 10px;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .info p {
+        justify-content: center; /* Выравниваем иконки и текст */
+    }
+
+    .photo-container {
+        width: 120px;
+        height: 160px;
+    }
+
+    .photo-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .header-text {
+        font-size: 30px;
+    }
+
+    .header-text h3 {
+        font-size: 18px;
+    }
 }
