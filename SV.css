@@ -279,7 +279,8 @@ header {
     }
     .photo-container {
         width: 100%;
-        max-width: 120px;
+        max-width: 150px;
+        margin-top: 30px; /* Отодвигаем фото ниже */
     }
 
     .info {
