@@ -17,11 +17,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3% 25%;  /* Уменьшаем паддинги */
+    padding: 3% 25%;
+    /* Уменьшаем паддинги */
     position: relative;
     width: 100%;
     min-height: 250px;
-    overflow: hidden;  /* Ограничиваем выход за пределы */
+    overflow: hidden;
+    /* Ограничиваем выход за пределы */
 }
 
 .header-content {
@@ -41,8 +43,8 @@ header {
     justify-content: center;
     font-size: 40px;
     font-weight: bold;
-    
-    
+
+
 }
 
 .header-text h1 {
@@ -51,7 +53,7 @@ header {
 
 .header-text h3 {
     font-size: 40px !important;
-      font-weight: normal;
+    font-weight: normal;
     margin: 5px 0 0 0;
     font-weight: kursive;
 }
@@ -88,14 +90,14 @@ header {
 
 .photo-container {
     flex: 0 1 100%;
-    
+
     max-width: 500px;
     min-width: 150px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
 }
 
 .photo-container img {
@@ -107,7 +109,7 @@ header {
 
 /* Текст справа */
 .info {
-    font-size: 22px; 
+    font-size: 22px;
     line-height: 1.5;
     flex: 1;
 }
@@ -128,6 +130,7 @@ header {
 
 
 @media screen and (max-width: 1024px) {
+
     /* Для ноутбуков и планшетов */
     header {
         flex-direction: column;
@@ -183,10 +186,12 @@ header {
         text-align: center;
         gap: 15px;
     }
+
     .photo-container {
         width: 105%;
         max-width: 250px;
     }
+
     .info {
         font-size: 18px;
     }
@@ -201,28 +206,30 @@ header {
     .header-text {
         font-size: 28px;
     }
-        
-    }
 
-    .photo-container img {
-        width: 100%;
-        height: auto;
-        margin-top: 10%;
-       
-    }
+}
 
-    .header-text {
-        font-size: 30px;
-        padding: 10px 0; 
-    }
+.photo-container img {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
 
-    .header-text h3 {
-        font-size: 18px;
-        
-    }
-    .data {
-        font-size: 32px;  /* Больше шрифт для мобильных */
-    }
+}
+
+.header-text {
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.header-text h3 {
+    font-size: 18px;
+
+}
+
+.data {
+    font-size: 32px;
+    /* Больше шрифт для мобильных */
+}
 
 @media screen and (max-width: 820px) {
     header {
@@ -246,7 +253,7 @@ header {
 
     .photo-container {
         width: 100%;
-        max-width: 200px;
+        max-width: 300px;
         margin-top: 10%;
     }
 
@@ -260,7 +267,8 @@ header {
 /* Для узких складных экранов */
 @media screen and (max-width: 500px) {
     header {
-        background-size: contain; /* Чтобы фон не обрезался */
+        background-size: contain;
+        /* Чтобы фон не обрезался */
         background-repeat: no-repeat;
         min-height: 180px;
         padding: 8% 5%;
@@ -272,20 +280,25 @@ header {
         text-align: center;
         gap: 10px;
     }
+
     .photo-info-container {
-        flex-direction: column-reverse; /* Перемещаем фото вниз */
+        flex-direction: column-reverse;
+        /* Перемещаем фото вниз */
         align-items: center;
         gap: 15px;
     }
+
     .photo-container {
         width: 100%;
         max-width: 150px;
-        margin-top: 10%; /* Отодвигаем фото ниже */
+        margin-top: 10%;
+        /* Отодвигаем фото ниже */
     }
 
     .info {
         font-size: 16px;
     }
+
     .header-text {
         font-size: 22px;
     }
