@@ -42,19 +42,20 @@ header {
     font-size: 40px;
     font-weight: bold;
     
+    
 }
 
 .header-text h1 {
     margin: 0;
-
-
 }
 
 .header-text h3 {
-    font-size: 42px;
-    font-weight: normal;
+    font-size: 40px !important;
+      font-weight: normal;
     margin: 5px 0 0 0;
+    font-weight: kursive;
 }
+
 
 .translation-note {
     position: absolute;
@@ -106,7 +107,7 @@ header {
 
 /* Текст справа */
 .info {
-    font-size: 22px;
+    font-size: 22px; 
     line-height: 1.5;
     flex: 1;
 }
@@ -124,10 +125,7 @@ header {
 
 }
 
-.data {
-    font-weight: bold;
-    font-size: 40px;
-}
+
 
 @media screen and (max-width: 1024px) {
     /* Для ноутбуков и планшетов */
@@ -225,7 +223,7 @@ header {
     .data {
         font-size: 32px;  /* Больше шрифт для мобильных */
     }
-}
+
 @media screen and (max-width: 820px) {
     header {
         height: auto;
