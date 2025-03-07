@@ -207,7 +207,12 @@ header {
 }
 
 /* Очень узкие экраны (телефоны-раскладушки) */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 390px) {
+    header {
+        height: auto;
+        padding: 8% 5%;
+        min-height: 200px;
+    }
     .name-job h1 {
         font-size: 24px;
     }
