@@ -26,6 +26,7 @@ main{
 }
 .study {
     margin-right: 20px;  /* Отступ между блоками */
+    align-items: center;
 }
 
 .profile {
@@ -33,9 +34,11 @@ main{
 }
 
 .study h2{
-    background-color: rgb(174, 163, 148);
+    background-color: rgb(197, 190, 180);
+    transform: translateX(20px); /* Сдвиг текста на 10px вправо */
     font-size: 28px;
     margin-bottom: 10px;
+    width: 60%;
 }
 h3, h4, h5, p {
     font-size: 22px;
