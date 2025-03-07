@@ -1,11 +1,43 @@
 main{
+   
     color: black;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 1% 25%;
+    align-items: flex-start;
+    padding: 1% 5%;
+    position: relative;
+    width: 100%;
+    min-height: 250px;
+    overflow: hidden ;
+    flex-direction: column;
 }
 
-.profile{
-    align-items: center;
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;  /* Устанавливаем максимальную ширину для контента */
+}
+
+
+.study, .profile {
+    flex: 1;
+    padding: 10px;
+}
+.study {
+    margin-right: 20px;  /* Отступ между блоками */
+}
+
+.profile {
+    margin-left: 20px;
+}
+
+.study h2{
+    background-color: rgb(174, 163, 148);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+h3, h4, h5, p {
+    font-size: 22px;
+    margin: 5px 0;
 }
