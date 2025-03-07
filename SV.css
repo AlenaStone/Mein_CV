@@ -182,14 +182,16 @@ header {
     }
 
     .photo-info-container {
-        flex-direction: column;
+        flex-direction: column-reverse; /* Только для мобильных! */
         text-align: center;
+        align-items: center;
         gap: 15px;
     }
 
     .photo-container {
-        width: 105%;
+        width: 100%;
         max-width: 250px;
+        margin-top: 10%; 
     }
 
     .info {
@@ -208,27 +210,28 @@ header {
     }
 
 }
-
+.photo-info-container {
+    display: flex;
+    flex-direction: column-reverse; /* Меняем порядок: текст сверху, фото снизу */
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
 .photo-container img {
     width: 100%;
     height: auto;
-    margin-top: 10%;
-
+    border-radius: 10px;
 }
+
 
 .header-text {
-    font-size: 30px;
-    padding: 10px 0;
+    font-size: 28px;
 }
+
 
 .header-text h3 {
     font-size: 18px;
 
-}
-
-.data {
-    font-size: 32px;
-    /* Больше шрифт для мобильных */
 }
 
 @media screen and (max-width: 820px) {
@@ -290,8 +293,8 @@ header {
 
     .photo-container {
         width: 100%;
-        max-width: 250px;
-        margin-top: 10%;
+        max-width: 230px; /* Чуть меньше для компактности */
+        margin-top: 12%;
         /* Отодвигаем фото ниже */
     }
 
