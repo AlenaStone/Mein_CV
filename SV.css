@@ -290,7 +290,7 @@ header {
 
     .photo-container {
         width: 100%;
-        max-width: 150px;
+        max-width: 250px;
         margin-top: 10%;
         /* Отодвигаем фото ниже */
     }
