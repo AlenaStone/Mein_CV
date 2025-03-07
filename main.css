@@ -136,16 +136,18 @@ h4, h5, p {
     }
 
     .expierence .separator-line {
-        position: relative;
+        position: top;
         width: 60%;
         height: 2px;
         left: 0;
-        margin: 10px 0;
+        margin: 0px 20%;
+
     }
 
     .expierence .date {
         width: 100%;
         margin-bottom: 5px;
+        margin-top: 4%;
     }
 
     .expierence .job-info {
